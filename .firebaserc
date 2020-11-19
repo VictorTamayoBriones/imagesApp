@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fotosapp-bb712": {
+      "hosting": {
+        "imagesApp": [
+          "fotosapp-bb712"
+        ]
+      }
+    }
+  }
+}
