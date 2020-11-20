@@ -11,13 +11,13 @@ export class NgDropFilesDirective {
   constructor() { }
 
   @HostListener('dragover', ['$event'])
-  public onDragEnter( enven:any ){
+  public onDragEnter( event:any ){
     this.mouseSobre.emit( true );
     this._prevenirDetener( event );
   }
 
   @HostListener('dragleave', ['$event'])
-  public onDragLeave( enven:any ){
+  public onDragLeave( event:any ){
     this.mouseSobre.emit( false );
   }
 
