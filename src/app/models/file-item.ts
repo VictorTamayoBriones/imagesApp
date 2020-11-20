@@ -8,8 +8,7 @@ export class FileItem{
     public estaSubiendo: boolean;
     public progreso: number;
 
-    constructor( archivo: File ){
-
+    constructor(archivo: File){
         this.archivo = archivo;
         this.nombreArchivo = archivo.name;
 
