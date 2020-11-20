@@ -1,1 +1,43 @@
-<p>carga works!</p>
+<div class="row">
+
+    <div class="col-md-4">
+
+        <h1>Sellecione archivos</h1>
+        <div class="well drop-zone">
+            <h4>Deje caer aqui los archivos</h4>
+            <img src="assets/drop-images.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="col-md-8">
+
+        <h4>Cargar archivos</h4>
+        <button (click)="cargarImagenes()" [disabled]="archivos.length === 0" class="btn btn-success">Cargar a firebase</button>
+        
+        <button class="btn btn-danger">Limpiar</button>
+
+        <table class="table">
+            <thead class="thead=dark">
+                <tr>
+                    <th>Nombre del archivo</th>
+                    <th>Tamaño</th>
+                    <th>Progreso</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>xyz</td>
+                    <td>12 MB</td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                          </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
