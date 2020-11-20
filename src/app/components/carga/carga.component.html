@@ -3,7 +3,7 @@
     <div class="col-md-4">
 
         <h1>Sellecione archivos</h1>
-        <div class="well drop-zone">
+        <div appNgDropFiles (mouseSobre)="estaSobreElemento = $event" [ngClass]="{ 'file-over': estaSobreElemento }" class="well drop-zone">
             <h4>Deje caer aqui los archivos</h4>
             <img src="assets/drop-images.png" alt="">
         </div>
@@ -14,7 +14,7 @@
 
         <h4>Cargar archivos</h4>
         <button (click)="cargarImagenes()" [disabled]="archivos.length === 0" class="btn btn-success">Cargar a firebase</button>
-        
+
         <button class="btn btn-danger">Limpiar</button>
 
         <table class="table">
